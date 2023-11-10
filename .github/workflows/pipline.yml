@@ -15,5 +15,5 @@ jobs:
       - name: Run hello bash script
         run: |
           #!/bin/bash
-          echo "First Name: YourFirstName"
-          echo "Last Name: YourLastName"
+          echo "First Name: ${{env.MYNAME}}"
+          echo "Last Name: ${{env.MYSURNAME}}"
